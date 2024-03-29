@@ -1,0 +1,30 @@
+button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #8e1cf2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #a549f6;
+}
+
+.flash {
+  animation: flash 0.5s 1;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #a549f6;
+  }
+  50% {
+    background-color: #bb84ec;
+  }
+  100% {
+    background-color: #a549f6;
+  }
+}
