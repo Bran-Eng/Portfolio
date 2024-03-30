@@ -7,7 +7,7 @@
 @import '../colors/colors';
 
 /* --------------------------------- Mixins --------------------------------- */
-@import '../utils/mixins';
+// @import '../utils/mixins';
 
 /* ----------------------------- Reset/Normalize ---------------------------- */
 
@@ -17,27 +17,19 @@
 
 /* --------------------------------- Layouts -------------------------------- */
 @import '../layouts/0-header/header';
-@import '../layouts/1-nav/nav';
-@import '../layouts/2-sidebar/sidebar';
-@import '../layouts/3-main-content/main-content';
-@import '../layouts/4-footer/footer';
-
-@import '../layouts/hero/hero';
-@import '../layouts/cta/cta';
+@import '../layouts/1-slider/slider';
 
 /* ------------------------------- Components ------------------------------- */
-@import '../components/buttons';
-@import '../components/cards';
+// @import '../components/buttons';
+// @import '../components/cards';
 
 /* ------------------------------- Dark Theme ------------------------------- */
 @import '../base/dark-theme';
 
 /* --------------------------------- Others --------------------------------- */
-@import '../layouts/grid';
 
 /* -------------------------------------------------------------------------- */
 /*                               General Styles                               */
 /* -------------------------------------------------------------------------- */
-
 body {
 }

@@ -1,28 +1,124 @@
+/* ------------------------------- Transition ------------------------------- */
+$trans-background-color: background-color 3s, color 0.3s;
+$trans-background: background-color 0.3s;
+$trans-color: color 0.3s;
+
+/* ----------------------------- General Styles ----------------------------- */
 * {
   margin: 0;
   padding: 0;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $dark-color;
+  background-color: $white-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: $percent100;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: $fw8;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input::placeholder {
+  font: inherit;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+h4 {
+  font-family: 'Poppins';
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  font-size: calc(1.3em + 1vw);
+  font-weight: $fw8;
+  line-height: 1;
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: $fw7;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: $fw6;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0.938em;
+}
+
+.column {
+  margin-left: -0.938em;
+  margin-right: -0.938em;
+}
+
+.column .row {
+  padding: 0 0.938em;
+}
+
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexitem {
+  display: flex;
+  align-items: center;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* ------------------------------ media queries ----------------------------- */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 0 2em;
+  }
 }

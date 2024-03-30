@@ -4,112 +4,69 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <title>Simple SCSS Boilerplate</title>
+    <title>Brandon's Portfolio | Web 2</title>
 
     <!-- --------------------------------- CSS --------------------------------- -->
     <link
       rel="stylesheet"
-      href="dist/main.css" />
+      href="dist/main.css"
+    />
 
     <!-- ----------------------------- JavaScript ------------------------------ -->
     <script
       src="./layouts/0-header/header.js"
-      defer></script>
-    <script
-      src="./layouts/1-nav/nav.js"
-      defer></script>
-    <script
-      src="./layouts/2-sidebar/sidebar.js"
-      defer></script>
-    <script
-      src="./layouts/3-main-content/main-content.js"
-      defer></script>
-    <script
-      src="./layouts/4-footer/footer.js"
-      defer></script>
+      defer
+    ></script>
 
     <script
       src="dist/main.js"
-      defer></script>
+      defer
+    ></script>
   </head>
-  <!-- CSS line 37 to 42 code should be: 
-*{
-     margin:0;
-     padding:0;
-} -->
-  <body class="">
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 Header                                  -->
-    <!-- ----------------------------------------------------------------------- -->
-    <header class="header">
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                               Navigation                                -->
-      <!-- ----------------------------------------------------------------------- -->
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 Sidebar                                 -->
-    <!-- ----------------------------------------------------------------------- -->
-    <div class="content-container">
-      <aside class="sidebar">
-        <h3>Sidebar</h3>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </aside>
-
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                                  Main                                   -->
-      <!-- ----------------------------------------------------------------------- -->
-      <main class="main-content">
-        <section class="hero">
-          <h1>Welcome to Our Website (Hero)</h1>
-          <p>This is a hero section with a catchy tagline or important information.</p>
-        </section>
-
-        <section class="cta">
-          <h2>Call to Action</h2>
-          <p>Engage your users here with a call to action, like signing up or contacting you.</p>
-          <button class="button">Sign Up</button>
-        </section>
-
-        <div class="card">
-          <h3>Card Title</h3>
-          <p>This card contains some information about a product or service.</p>
+  <body>
+    <div
+      id="page"
+      class="site"
+    >
+      <header>
+        <!-- ----------------------------- Header Top ------------------------------ -->
+        <div class="header-top">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <ul class="flexitem main-links">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Featured Products</a></li>
+                  <li><a href="#">hishlist</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <ul class="flexitem">
+                  <li class="main-links">
+                    <div>
+                      <li><a href="#">Sign Up</a></li>
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Order Tracking</a></li>
+                      <li>
+                        <a href="#"
+                          >USD <span class="icon-small"><i class="arrow-down-s-line"></i></span
+                        ></a>
+                      </li>
+                      <li><a href="#">English span.icon-small>i.</a></li>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <button class="button">Click me</button>
-      </main>
+      </header>
+      <main></main>
+      <footer></footer>
     </div>
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 Footer                                  -->
-    <!-- ----------------------------------------------------------------------- -->
-    <footer class="footer">
-      <p>&copy; 2023 Simple SCSS Boilerplate. All rights reserved.</p>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <script>
-        // Example JavaScript to toggle dark mode
-        function toggleDarkMode() {
-          document.body.classList.toggle('dark');
-        }
-      </script>
-    </footer>
   </body>
 </html>
