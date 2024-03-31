@@ -8,76 +8,153 @@
 /* --------------------------------- Mixins --------------------------------- */
 /* ----------------------------- Reset/Normalize ---------------------------- */
 /* ---------------------------------- Base ---------------------------------- */
+/* ---------------------------------- Fonts --------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* ---------------------------------- Text ---------------------------------- */
+/* ------------------------------- Transition ------------------------------- */
+/* ----------------------------- General Styles ----------------------------- */
 * {
   margin: 0;
   padding: 0;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #0a021c;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 800;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input::-moz-placeholder {
+  font: inherit;
+}
+
+input::placeholder {
+  font: inherit;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+h4 {
+  font-family: "Poppins";
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  font-size: calc(1.3em + 1vw);
+  font-weight: 800;
+  line-height: 1;
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
+h2 {
+  font-size: 2.5em;
 }
 
-/* ---------------------------------- Fonts --------------------------------- */
-/* ---------------------------------- Text ---------------------------------- */
-/* --------------------------------- Layouts -------------------------------- */
-/* ------------------------------- Components ------------------------------- */
-button {
-  margin-top: 10px;
-  padding: 5px 15px;
-  border: none;
-  border-radius: 3px;
-  background-color: #8e1cf2;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1em;
   font-weight: 600;
 }
-button:hover {
-  background-color: #a549f6;
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0.938em;
 }
 
-.flash {
-  animation: flash 0.5s 1;
+.column {
+  margin-left: -0.938em;
+  margin-right: -0.938em;
 }
 
-@keyframes flash {
-  0% {
-    background-color: #a549f6;
-  }
-  50% {
-    background-color: #bb84ec;
-  }
-  100% {
-    background-color: #a549f6;
-  }
-}
-.card {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  border-radius: 4px;
+.column .row {
+  padding: 0 0.938em;
 }
 
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexitem {
+  display: flex;
+  align-items: center;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* ------------------------------ media queries ----------------------------- */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 0 2em;
+  }
+}
+/* --------------------------------- Layouts -------------------------------- */
+header {
+  /* ------------------------------- Header Top ------------------------------- */
+}
+header .main-links a:hover {
+  color: #794afa;
+}
+header .second-links a:hover {
+  color: #7c988a;
+}
+header .icon-small,
+header .icon-large {
+  display: flex;
+}
+
+/* ------------------------------- Header Nav ------------------------------- */
+/* -------------------- Header Main, Departments Category ------------------- */
+/* ------------------------------- Search Form ------------------------------ */
+/* ----------------------------- Responsive Menu ---------------------------- */
+/* ------------------------------- Components ------------------------------- */
 /* ------------------------------- Dark Theme ------------------------------- */
 /* --------------------------------- Others --------------------------------- */
 /* -------------------------------------------------------------------------- */

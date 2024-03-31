@@ -1,5 +1,17 @@
-/* ------------------------------- Header Top ------------------------------- */
-.header {
+header {
+  /* ------------------------------- Header Top ------------------------------- */
+  .main-links a:hover {
+    color: $secondary-color;
+  }
+
+  .second-links a:hover {
+    color: $light-text-color;
+  }
+
+  .icon-small,
+  .icon-large {
+    display: flex;
+  }
 }
 
 /* ------------------------------- Header Nav ------------------------------- */
