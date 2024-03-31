@@ -1,16 +1,26 @@
 header {
-  /* ------------------------------- Header Top ------------------------------- */
-  .main-links a:hover {
-    color: $secondary-color;
-  }
-
-  .second-links a:hover {
-    color: $light-text-color;
-  }
-
-  .icon-small,
-  .icon-large {
+  li > a {
     display: flex;
+    position: relative;
+    line-height: inherit;
+  }
+
+  /* ------------------------------- Header Top ------------------------------- */
+  .header-top {
+    .wrapper {
+      font-size: $font-small;
+      font-weight: $fw3;
+      justify-content: space-between;
+      line-height: 42px;
+
+      ul {
+        gap: 2em;
+      }
+    }
+
+    li {
+      position: relative;
+    }
   }
 }
 
