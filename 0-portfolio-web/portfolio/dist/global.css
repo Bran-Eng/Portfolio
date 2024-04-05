@@ -1,14 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .cursive {
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 /* Creates visually striking text with readable background */
 .Welcome-text {
-  // The first background is a semi-transparent white overlay to ensure text readability.
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
   /* `screen` mode brightens the gradient for text visibility */
   background-blend-mode: normal, screen;
@@ -29,7 +27,7 @@
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius: 32px;
-  box-shadow: inset 0 -7px 11px #a48fff1f;
+  box-shadow: inset 0 -7px 11px rgba(164, 143, 255, 0.1215686275);
   display: flex;
   position: relative;
   /* Content will not wrap at all even if it causes overflows. */
@@ -41,12 +39,11 @@
 
 .button-primary {
   background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, 0.32) 100%), rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
-
-  &:hover {
-    background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, 0.42) 100%), rgba(113, 47, 255, 0.24);
-    box-shadow: inset 0 0 12px #bf97ff70;
-  }
+  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.2392156863);
+}
+.button-primary:hover {
+  background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, 0.42) 100%), rgba(113, 47, 255, 0.24);
+  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.4392156863);
 }
 
 html {
