@@ -15,6 +15,8 @@ const Hero = () => {
         />
       </video>
 
+      <div className='flex flex-col absolute top-0 left-0 right-0 bottom-[1340px] z-20 bg-blue-600 bg-opacity-10'></div>
+
       <HeroContent></HeroContent>
     </div>
   );
