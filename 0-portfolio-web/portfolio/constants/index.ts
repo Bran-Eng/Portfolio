@@ -244,3 +244,75 @@ export const Other_skill = [
     height: 60,
   },
 ];
+
+export const Piramid_One = [
+  {
+    skill_name: 'Html 5',
+    Image: '/html.png',
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: 'Css',
+    Image: '/css.png',
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: 'Sass',
+    Image: '/sass.png',
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: 'Tailwind Css',
+    Image: '/tailwind.png',
+    width: 80,
+    height: 80,
+  },
+];
+
+export const Piramid_Two = [
+  {
+    skill_name: 'Java Script',
+    Image: '/js.png',
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: 'Redux',
+    Image: '/redux.png',
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: 'Framer Motion',
+    Image: '/framer.png',
+    width: 80,
+    height: 80,
+  },
+];
+
+export const Piramid_Three = [
+  {
+    skill_name: 'React',
+    Image: '/react.png',
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: 'Type Script',
+    Image: '/ts.png',
+    width: 80,
+    height: 80,
+  },
+];
+
+export const Piramid_Four = [
+  {
+    skill_name: 'Next js 13',
+    Image: '/next.png',
+    width: 80,
+    height: 80,
+  },
+];
