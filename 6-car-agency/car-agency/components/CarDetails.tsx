@@ -44,7 +44,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                 leave='ease-out diration-100'
                 leaveFrom='opacity-100 scale-100'
                 leaveTo='opacity-0 scale-95'>
-                <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2x1 bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
+                <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
                   <button
                     type='button'
                     className='absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full'
@@ -59,14 +59,69 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                   </button>
 
                   <div className='flex-1 flex flex-col gap-3'>
+                    {/* Main Image */}
                     <div className='relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg'>
-                      {/* <Image
-                        src=''
-                        alt=''
-                        width={}
-                        height={}
+                      <Image
+                        src='/hero.png'
+                        alt='car model'
+                        fill
+                        priority
                         className=''
-                      /> */}
+                      />
+                    </div>
+
+                    {/* Image Galery */}
+                    <div className='flex gap-3'>
+                      <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                        <Image
+                          src='/hero.png'
+                          alt='car model'
+                          fill
+                          priority
+                          className=''
+                        />
+                      </div>
+
+                      <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                        <Image
+                          src='/hero.png'
+                          alt='car model'
+                          fill
+                          priority
+                          className=''
+                        />
+                      </div>
+
+                      <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                        <Image
+                          src='/hero.png'
+                          alt='car model'
+                          fill
+                          priority
+                          className=''
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Car Data */}
+                  <div className='flex-1 flex flex-col gap-2'>
+                    <h2 className='font-semibold text-xl capitalize'>
+                      {car.make} {car.model}
+                    </h2>
+
+                    <div className='mt-3 flex flex-wrap gap-4'>
+                      {/* Object.entries(car): Converts the `car` object into an array of [key, value] pairs, e.g., [['maker', 'Toyota'], ['model', 'Corolla']]. */}
+                      {Object.entries(car).map(([key, value]) => (
+                        <div
+                          className='flex justify-between gap-5 w-full text-right'
+                          key={key}>
+                          {/* key.split('_'): Splits the string at each underscore, creating an array of substrings: "engine_type", results in ["engine", "type"]. */}
+                          {/* .join(' '): Recombines array elements into a single string with spaces, turning "engine_type" into "engine type". */}
+                          <h4 className='text-grey capitalize'>{key.split('_').join(' ')}</h4>
+                          <p className='text-black-100 font-semibold'>{value}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </Dialog.Panel>
