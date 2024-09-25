@@ -85,8 +85,8 @@ export const Socials = [
     src: '/discord.svg',
   },
   {
-    name: 'Facebook',
-    src: '/facebook.svg',
+    name: 'linkedIn',
+    src: '/linkedin.svg',
   },
   {
     name: 'Instagram',

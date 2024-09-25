@@ -2,6 +2,8 @@ import { Socials } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 
+import { RxDisc, RxDiscordLogo, RxGithubLogo, RxLinkedinLogo, RxInstagramLogo, RxTwitterLogo } from 'react-icons/rx';
+
 const Navbar = () => {
   return (
     <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10'>
@@ -43,16 +45,35 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row gap-5'>
-          {/* Return JSX elements dinamically */}
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
+          <a
+            href='https://www.linkedin.com/in/brandon-soria-207266294/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <RxLinkedinLogo
+              color='white'
+              className='text-[15px] size-8'
             />
-          ))}
+          </a>
+
+          <a
+            href='https://github.com/Bran-Eng?tab=repositories'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <RxGithubLogo
+              color='white'
+              className='text-[15px] size-8'
+            />
+          </a>
+
+          <a
+            href='https://discordapp.com/users/front_end_brandon'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <RxDiscordLogo
+              color='white'
+              className='text-[15px] size-8'
+            />
+          </a>
         </div>
       </div>
     </div>

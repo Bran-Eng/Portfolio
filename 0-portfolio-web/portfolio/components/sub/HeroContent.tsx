@@ -32,12 +32,13 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className='text-lg text-gray-400 my-5 max-w-[600px]'>
-          I&apos;m a Front-End Software Engineer. Check out my projects and skills.
+          className='text-lg text-blue-300 my-5 max-w-[600px]'>
+          I&apos;m a Front-End Software Engineer. Check out my Projects and Skills.
         </motion.p>
 
         <motion.a
           variants={slideInFromLeft(1)}
+          href='#skills'
           className='button-primary py-2 text-center text-white cursor-pointer rounded-lg max-w-[200px]'>
           Learn More!
         </motion.a>
