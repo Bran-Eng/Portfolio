@@ -19,7 +19,7 @@ const Navbar = () => {
             className='cursoir-pointer hover:animate-slowspin'
           />
 
-          <span className='font-bold ml-[10px] hidden md:block text-gray-300'>Brandon&apos;s Portfolio</span>
+          <span className='font-bold ml-[10px] hidden md:block text-gray-300'>Brandon Israel Hurtado Soria</span>
         </a>
 
         <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-20'>
@@ -40,6 +40,12 @@ const Navbar = () => {
               href='#projects'
               className='cursor-pointer'>
               Projects
+            </a>
+
+            <a
+              href='#footer'
+              className='cursor-pointer'>
+              Contact
             </a>
           </div>
         </div>

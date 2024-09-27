@@ -6,7 +6,7 @@ const Projects = () => {
     <div
       className='flex flex-col items-center justify-center py-10'
       id='projects'>
-      <h1 className='text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10'>My Projects</h1>
+      <h1 className='text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>My Projects</h1>
       <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10 mb-10'>
         <ProjectCard
           src='/NextWebsite.png'
